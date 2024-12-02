@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <style>
+    footer{
+      flex-shrink: 0;
+    }
+    .content{
+      background-color: black;
+      background-image: url(img/—Pngtree—restaurant\ food\ poster_1015893.jpg); 
+      background-size: 100%;
+    }
+    p{
+      color: white;
+    }
+    h1{
+      color: white;
+    }
+    .fa {
+      padding: 5px;
+      font-size: 30px;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 5px;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="content">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand me-4" href="index.html" style="font-family: 'Brush Script MT', cursive;">The Beef</a>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Team.html">Team</a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  
+  <!-- Content -->
+    <div class="container my-5">
+      <h1 class="text-center mb-4" style="font-family: 'Brush Script MT', cursive;">Contact Us</h1>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">
+            <p>Name</p>
+          </label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">
+            <p>Email</p>
+            </label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">
+            <p>Message</p>
+          </label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#Modal">Send</button>
+      </form>
+    </div>
+
+    <!-- Modal -->
+      <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">Kirim pesan</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Apakah anda yakin pesan yang akan dikirim sudah benar?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak Yakin</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Yakin</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <!-- Footer -->
+    <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-2">
+    <p class="mb-1">Contact</p>
+    <p class="mb-1">Phone Number: 0831-1242-537</p>
+    <p class="mb-1">Email: TheBeefXprience@gmail.com</p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <p class="mb-1">&copy; 2024 The Beef Steakhouse | All Rights Reserved</p>
+  </footer>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
